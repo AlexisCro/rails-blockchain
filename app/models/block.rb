@@ -1,6 +1,4 @@
 class Block < ApplicationRecord
-  require 'bcrypt'
-
   before_validation :generate_hash,
                     :generate_timestamp,
                     :generate_previous_hash
